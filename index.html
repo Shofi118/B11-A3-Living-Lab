@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food services</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+
+    <style>
+        .font-sora{
+            font-family: "Sora", serif;
+        }
+    </style>
 <script>
     tailwind.config = {
       theme: {
@@ -21,7 +32,132 @@
   </script>
 
 </head>
-<body>
-    <h3>My name is amirul</h3>
+<body class="font-sora">
+    <!-- header-section -->
+ <header class="">
+    <nav class="mx-6">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  
+              </div>
+              <img src="images/logo-header.png" alt="">
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Product</a></li>
+                <li><a>Services</a></li>
+               <li><a>Contact us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end space-x-6">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+              <a class="btn btn-outline">Login</a>
+              <a class="btn text-white btn-success">Register</a>
+            </div>
+          </div>
+    </nav>
+    <section class="m-24">
+      <div class="text-senter space-y-6">
+        <h3 class="text-center font-semibold text-5xl">Freshness <span class="text-[#179800]">You Can <br>
+          Count</span> On, Prices You’ll Love!</h3>
+          <p class="text-center text-xl">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+         <div class="items-center">
+          <img src="images/hero-vegetables.png" alt="">
+         </div>
+      </div>
+    </section>
+    <section class="my-24 ml-5">
+      <h3 class="text-[#179800] m-8 font-semibold text-3xl">Services</h3>
+      <div class="grid space-y-6 grid-cols-1 lg:grid-cols-3">
+       
+      <div class="card bg-gray-500 w-96 shadow-xl">
+        <div class="avatar ml-32 mt-6">
+          <div class="items-center rounded-full ring ring-offset-2">
+            <img src="images/service.png" alt="">
+          </div>
+        </div>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">24/7 Services </h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+          
+        </div>
+      </div>
+       
+      <div class="card bg-gray-500 w-96 shadow-xl">
+        <div class="avatar ml-32 mt-6">
+          <div class="items-center  rounded-full ring ring-offset-2">
+            <img src="images/delivery.png" alt="">
+          </div>
+        </div>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">24/7 Services </h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+          
+        </div>
+      </div>
+       
+      <div class="card bg-gray-500 w-96 shadow-xl">
+        <div class="avatar ml-32 mt-6">
+          <div class="items-center  rounded-full ring ring-offset-2">
+            <img src="images/healthy.png" alt="">
+          </div>
+        </div>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">24/7 Services </h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+          
+        </div>
+      </div>
+      </div>
+    </section>
+    <section>
+
+    </section>
+    <section>
+      <h3 class="text-[#179800] m-8 font-semibold text-3xl">Arrival & Offers</h3>
+    </section>
+    <div class="my-24">
+      <div class="card card-side bg-base-100 shadow-xl">
+        <div class="card-body">
+          <img src="images/dawat-logo.png" alt="">
+        <button>Cook Exotic Dishes</button>
+          <p>UP to 20% OFF</p>
+          
+        </div>
+        <figure>
+         <img src="images/dawat-mock-up.png" alt="">
+        </figure>
+        
+      </div>
+    </div>
+
+ </header>
+ <!-- main-section -->
+  <main>
+
+  </main>
+  <!-- footer-section -->
+   <footer>
+
+   </footer>
 </body>
 </html>
